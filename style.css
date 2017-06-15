@@ -25,6 +25,10 @@ a {
 	text-decoration: none;
 }
 
+h1, h2, h3 {
+	font-family: "museosans300", sans-serif;
+}
+
 .clearfix::after {
     content: "";
     display: block;
@@ -121,7 +125,6 @@ a {
 	font-size: 56px;
 	font-weight: 300;
 	text-transform: uppercase;
-	font-family: "museosans300", sans-serif;
 }
 
 #hero .p1 {
@@ -185,7 +188,6 @@ a {
 .involved h2 {
 	text-transform: uppercase;
 	text-align: center;
-	font-family: "museosans300", sans-serif;
 	margin-bottom: 35px;
 }
 
@@ -221,7 +223,6 @@ a {
 .blog h2 {
 	text-transform: uppercase;
 	text-align: center;
-	font-family: "museosans300", sans-serif;
 	margin-bottom: 35px;
 }
 
@@ -239,7 +240,6 @@ a {
 .mission .card h3 {
 	color: rgb(93, 192, 201);
 	text-transform: none;
-	font-family: "museosans300", sans-serif;
 	font-size: 16px;
 	font-weight: bold;
 	margin: 14px 0;
