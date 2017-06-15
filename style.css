@@ -36,7 +36,6 @@ h1, h2, h3 {
 }
 
 .container {
-	width: 1100px;
 	margin: 0 auto;
 }
 
@@ -227,7 +226,11 @@ h1, h2, h3 {
 }
 
 .mission .cards {
-	margin: 100px -20px 0 -20px;
+	margin: 0 -20px;
+}
+
+.mission .card {
+	margin-top: 100px;
 }
 
 .mission .card .content {
@@ -299,20 +302,13 @@ ul.steps li.active {
 
 .blog {
 	background: #5d5e61;
-	height: 200px;
 	position: relative;
-	margin-top: 150px;
 }
 
 .blog > div {
 	background: white;
-	width: 1250px;
 	margin: 0 auto 0 auto;
 	padding: 20px 0;
-	bottom: 0;
-	position: absolute;
-	left: 50%;
-	transform: translate(-50%, 0);
 }
 
 .blog .posts {
@@ -383,4 +379,60 @@ footer hr {
 footer .social a {
 	font-size: 18px;
 	margin: 8px;
+}
+
+/* Responsive */
+
+.container {
+	width: 100%;
+	padding-left: 20px;
+	padding-right: 20px;
+	box-sizing: border-box;
+}
+
+.blog > div {
+	width: 100%;
+	position: relative;
+}
+
+.blog .prev,
+.blog .next {
+	display: none;
+}
+
+/* Phones*/
+@media (max-width: 767px) {
+	.card,
+	.mission .card,
+	.members .card,
+	.blog .posts .card {
+		float: none;
+		width: 100%;
+		margin-bottom: 20px;
+	}
+}
+
+/* Wide screens */
+@media (min-width: 1250px) {
+	.container {
+		width: 1100px;
+	}
+
+	.blog {
+		height: 200px;
+		margin-top: 150px;
+	}
+
+	.blog > div {
+		width: 1250px;
+		bottom: 0;
+		position: absolute;
+		left: 50%;
+		transform: translate(-50%, 0);
+	}
+
+	.blog .prev,
+	.blog .next {
+		display: block;
+	}
 }
